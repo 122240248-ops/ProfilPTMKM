@@ -1251,8 +1251,19 @@ section,
 /*--------------------------------------------------------------
 # Contact Section
 --------------------------------------------------------------*/
+.contact .contact-info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
 .contact .info-item+.info-item {
-  margin-top: 40px;
+  margin-top: 0;
+}
+
+.contact .info-item {
+  height: 100%;
+  align-items: flex-start;
 }
 
 .contact .info-item i {
@@ -1267,6 +1278,7 @@ section,
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   margin-right: 15px;
+  flex-shrink: 0;
 }
 
 .contact .info-item h3 {
@@ -1285,6 +1297,12 @@ section,
 .contact .info-item:hover i {
   background: var(--accent-color);
   color: var(--contrast-color);
+}
+
+@media (max-width: 767px) {
+  .contact .contact-info-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 .contact .php-email-form {

@@ -1,6 +1,6 @@
-Thanks for downloading this template!
+Terima kasih telah mengunduh templat ini!
 
-Template Name: Imperial
-Template URL: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+Nama Templat: Imperial
+Alamat Templat: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+Pembuat: BootstrapMade.com
+Lisensi: https://bootstrapmade.com/license/

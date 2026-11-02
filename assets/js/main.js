@@ -227,6 +227,12 @@
   let navmenulinks = document.querySelectorAll('.navmenu a');
 
   function navmenuScrollspy() {
+    if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 1) {
+      navmenulinks.forEach(link => link.classList.remove('active'));
+      navmenulinks[navmenulinks.length - 1]?.classList.add('active');
+      return;
+    }
+
     navmenulinks.forEach(navmenulink => {
       if (!navmenulink.hash) return;
       let section = document.querySelector(navmenulink.hash);

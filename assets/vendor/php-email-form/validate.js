@@ -18,7 +18,7 @@
       let recaptcha = thisForm.getAttribute('data-recaptcha-site-key');
       
       if( ! action ) {
-        displayError(thisForm, 'The form action property is not set!');
+        displayError(thisForm, 'Alamat tujuan formulir belum ditentukan.');
         return;
       }
       thisForm.querySelector('.loading').classList.add('d-block');
@@ -41,7 +41,7 @@
             }
           });
         } else {
-          displayError(thisForm, 'The reCaptcha javascript API url is not loaded!')
+          displayError(thisForm, 'Alamat API JavaScript reCAPTCHA belum dimuat.')
         }
       } else {
         php_email_form_submit(thisForm, action, formData);
@@ -68,7 +68,7 @@
         thisForm.querySelector('.sent-message').classList.add('d-block');
         thisForm.reset(); 
       } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
+        throw new Error(data ? data : 'Pengiriman formulir gagal dan tidak ada pesan kesalahan dari: ' + action);
       }
     })
     .catch((error) => {

@@ -1,2 +1,2 @@
-Fully working PHP/AJAX contact form script is available in the pro version of the template.
-You can buy it from: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
+Skrip formulir kontak PHP/AJAX yang berfungsi penuh tersedia pada versi profesional templat ini.
+Anda dapat membelinya melalui: https://bootstrapmade.com/imperial-free-onepage-bootstrap-theme/
